@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Running Log - Home{% endblock %}</title>
+        <link type="text/css" rel="stylesheet" href="{% static css/runlog.css %}">
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>Running Log</h1>
+            <div class="summary">
+                <div class="time-block">
+                    <h3>This Week</h3>
+                    <ul>
+                        <li>10.7 miles</li>
+                        <li>1:40:19</li>
+                        <li>8:57 /mi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shoes">
+                <ul>
+                    <li>
+                        <h4 class="shoe-name">Pearl</h4>
+                        <span class="shoe-model">New Balance 1500v4</span>
+                        <span class="shoe-miles">300.2</span>
+                    </li>
+                    <li>
+                        <h4 class="shoe-name">Pearl</h4>
+                        <span class="shoe-model">New Balance 1500v4</span>
+                        <span class="shoe-miles">300.2</span>
+                    </li>
+                    <li>
+                        <h4 class="shoe-name">Pearl</h4>
+                        <span class="shoe-model">New Balance 1500v4</span>
+                        <span class="shoe-miles">300.2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
