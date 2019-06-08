@@ -4,10 +4,11 @@
 <html>
     <head>
         <title>{% block title %}Running Log - Home{% endblock %}</title>
-        <link type="text/css" rel="stylesheet" href="{% static css/runlog.css %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/runlog.css' %}">
     </head>
     <body>
         <div class="main-container">
+            {% block main %}
             <h1>Running Log</h1>
             <div class="summary">
                 <div class="time-block">
@@ -38,6 +39,7 @@
                     </li>
                 </ul>
             </div>
+            {% endblock %}
         </div>
     </body>
 </html>

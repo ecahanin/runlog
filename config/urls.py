@@ -19,7 +19,8 @@ from django.urls import path
 import runlog.views as v
 
 urlpatterns = [
-    path('/', v.dashboard, name="dashboard"),
+    path('', v.dashboard, name="dashboard"),
     path('shoes/', v.shoes, name="shoes"),
+    path('shoes/add/', v.add_shoe, name="add-shoe"),
     path('admin/', admin.site.urls),
 ]

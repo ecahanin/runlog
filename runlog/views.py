@@ -6,4 +6,8 @@ def dashboard(request):
     return render(request, 'runlog/base.html', {})
 
 def shoes(request):
-    return render(request, 'runlog/shoes.html', {})
+    shoes = Shoe.objects.all()
+    return render(request, 'runlog/shoes.html', {'shoes':shoes})
+
+def add_shoe(request):
+    return render(request, 'runlog/base.html', {})
