@@ -1,0 +1,13 @@
+{% extends 'runlog/base.html' %}
+
+{% block main %}
+
+<div class="form-container">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Shoe">
+    </form>
+</div>
+
+{% endblock %}

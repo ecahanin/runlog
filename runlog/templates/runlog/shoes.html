@@ -6,13 +6,15 @@
 
 
 {% block main %}
-<a href="{% url 'add-shoe' %}">Add shoe</a>
+<a href="{% url 'add_shoe' %}">Add shoe</a>
+<h2>Shoes belonging to {{user.id}}</h2>
 {% for shoe in shoes %}
+
 <div class="shoe">
     <div class="shoe-img">
         <img src="">
     </div>
-    <h2>{{shoe.name}}</h2>
+    <h3>{{shoe.name}}</h3>
     <span class="type">{{shoe.brand}} {{shoe.model}}</span>
     <span class="mileage">{{shoe.mileage}}</span>/<span>{{shoe.max_mileage}}</span>
     <span class="date-purchased">{{shoe.date_purchased}}</span>

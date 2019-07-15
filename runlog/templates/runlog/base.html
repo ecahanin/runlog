@@ -7,10 +7,31 @@
         <link type="text/css" rel="stylesheet" href="{% static 'css/runlog.css' %}">
     </head>
     <body>
+        <header>
+            <nav>
+                <h1><a href="{% url 'dashboard' %}">Running Log</a></h1>
+                <ul class="right-nav">
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Daily</a></li>
+                    <li><a href="">Weekly</a></li>
+                    <li><a href="">Monthly</a></li>
+                    <li><a href="">Yearly</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="main-container">
             {% block main %}
-            <h1>Running Log</h1>
-            <div class="summary">
+            <div class="summary main-mod">
+                <div class="time-block">
+                    <h3>Recent Runs</h3>
+                    <ul>
+                        <li>3 mi 25:00 Pearl</li>
+                        <li>3 mi 25:00 Pearl</li>
+                        <li>3 mi 25:00 Pearl</li>
+                    </ul>
+                </div>
+            </div>            
+            <div class="summary main-mod">
                 <div class="time-block">
                     <h3>This Week</h3>
                     <ul>
@@ -20,7 +41,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="shoes">
+            <div class="summary main-mod">
+                <div class="time-block">
+                    <h3>This Month</h3>
+                    <ul>
+                        <li>10.7 miles</li>
+                        <li>1:40:19</li>
+                        <li>8:57 /mi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="summary main-mod">
+                <div class="time-block">
+                    <h3>This Year</h3>
+                    <ul>
+                        <li>10.7 miles</li>
+                        <li>1:40:19</li>
+                        <li>8:57 /mi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shoes main-mod">
                 <ul>
                     <li>
                         <h4 class="shoe-name">Pearl</h4>
